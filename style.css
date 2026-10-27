@@ -1,0 +1,537 @@
+/* ========================================================
+   Campus Lost & Found Portal
+   Theme: Classic Academic Navy & Slate with Real Campus Imagery
+   ======================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F1F5F9;
+  /* Soft overlay over real campus photograph background */
+  background-image: linear-gradient(rgba(244, 246, 249, 0.90), rgba(244, 246, 249, 0.90)), url('images/campus-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #1E293B;
+  line-height: 1.6;
+}
+
+/* ========================================================
+   Header & Relocated Navigation Tabs (Top Bar)
+   ======================================================== */
+header.site-header {
+  background-color: #16325C; /* Classic Academic Navy */
+  border-bottom: 3px solid #D97706; /* Collegiate Warm Gold Accent */
+  color: #FFFFFF;
+  padding: 12px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.header-container {
+  width: 92%;
+  max-width: 1050px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* College Branding (Logo + Portal Title) */
+.brand-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.brand-logo {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #F59E0B; /* Gold ring border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  display: block;
+  background-color: #FFFFFF;
+}
+
+.brand-text h1 {
+  font-size: 20px;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+}
+
+.brand-text span {
+  font-size: 11px;
+  color: #FCD34D;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+}
+
+/* Relocated Navigation Tabs (Top-Right in Header) */
+nav.nav-tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+nav.nav-tabs a {
+  color: #E2E8F0;
+  text-decoration: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+nav.nav-tabs a:hover {
+  background-color: #0F2942;
+  color: #FFFFFF;
+}
+
+nav.nav-tabs a.active {
+  background-color: #FFFFFF;
+  color: #16325C;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* ========================================================
+   Main Content Container
+   ======================================================== */
+.container {
+  width: 92%;
+  max-width: 1050px;
+  margin: 25px auto;
+  background-color: #FFFFFF;
+  padding: 26px 30px;
+  border: 1px solid #CBD5E1;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+/* Headings */
+h2 {
+  color: #16325C;
+  border-bottom: 2px solid #E2E8F0;
+  padding-bottom: 8px;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+p {
+  font-size: 14.5px;
+  color: #334155;
+  margin-bottom: 12px;
+}
+
+/* Hero Section on Home Page */
+.hero-card {
+  background: linear-gradient(135deg, #16325C 0%, #1E40AF 100%);
+  color: #FFFFFF;
+  padding: 24px 28px;
+  border-radius: 5px;
+  margin-bottom: 24px;
+  box-shadow: 0 3px 8px rgba(22, 50, 92, 0.15);
+}
+
+.hero-card h2 {
+  color: #FFFFFF;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+}
+
+.hero-card p {
+  color: #E2E8F0;
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.hero-actions .btn-light {
+  background-color: #FFFFFF;
+  color: #16325C;
+  font-weight: bold;
+}
+
+.hero-actions .btn-light:hover {
+  background-color: #F8FAFC;
+}
+
+.hero-actions .btn-gold {
+  background-color: #D97706;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.hero-actions .btn-gold:hover {
+  background-color: #B45309;
+}
+
+/* ========================================================
+   Statistics Box
+   ======================================================== */
+.stats-box {
+  background-color: #F8FAFC;
+  border-left: 4px solid #16325C;
+  border-top: 1px solid #E2E8F0;
+  border-right: 1px solid #E2E8F0;
+  border-bottom: 1px solid #E2E8F0;
+  padding: 14px 20px;
+  margin-bottom: 22px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-item span.stat-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #64748B;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.stat-item span.stat-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #16325C;
+}
+
+/* ========================================================
+   In-Page Interactive Filter Tabs (On Browse Page)
+   ======================================================== */
+.filter-tabs-wrapper {
+  display: flex;
+  gap: 4px;
+  border-bottom: 2px solid #CBD5E1;
+  margin-bottom: 18px;
+  overflow-x: auto;
+}
+
+.filter-tab {
+  background: none;
+  border: 1px solid transparent;
+  border-bottom: none;
+  padding: 8px 16px;
+  font-size: 13.5px;
+  font-weight: bold;
+  color: #475569;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0;
+  font-family: inherit;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.filter-tab:hover {
+  background-color: #F1F5F9;
+  color: #16325C;
+}
+
+.filter-tab.active {
+  background-color: #16325C;
+  color: #FFFFFF;
+  border-color: #16325C;
+}
+
+/* Form Selection Tabs on Report Page */
+.form-type-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form-type-btn {
+  flex: 1;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: inherit;
+  border: 2px solid #CBD5E1;
+  background-color: #F8FAFC;
+  color: #334155;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+  transition: all 0.15s ease;
+}
+
+.form-type-btn:hover {
+  background-color: #EEF2F6;
+  border-color: #94A3B8;
+}
+
+.form-type-btn.active.lost {
+  background-color: #FEF2F2;
+  border-color: #DC2626;
+  color: #991B1B;
+}
+
+.form-type-btn.active.found {
+  background-color: #F0FDF4;
+  border-color: #16A34A;
+  color: #14532D;
+}
+
+/* ========================================================
+   Clean Tables (No Icons, Plain Text Layout)
+   ======================================================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 14px;
+  margin-bottom: 16px;
+  font-size: 13.5px;
+  background-color: #FFFFFF;
+}
+
+table, th, td {
+  border: 1px solid #CBD5E1;
+}
+
+th {
+  background-color: #EAEFF5; /* Academic light steel blue */
+  color: #16325C;
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0.2px;
+}
+
+td {
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+tr:nth-child(even) {
+  background-color: #F8FAFC;
+}
+
+tr:hover {
+  background-color: #F1F5F9;
+}
+
+/* Status Badges */
+.badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 11.5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.badge-lost {
+  background-color: #FEE2E2;
+  color: #991B1B;
+  border: 1px solid #FECACA;
+}
+
+.badge-found {
+  background-color: #DCFCE7;
+  color: #14532D;
+  border: 1px solid #BBF7D0;
+}
+
+.badge-active {
+  background-color: #EFF6FF;
+  color: #1E40AF;
+  border: 1px solid #BFDBFE;
+}
+
+.badge-returned {
+  background-color: #F1F5F9;
+  color: #475569;
+  border: 1px solid #CBD5E1;
+  font-style: italic;
+}
+
+/* ========================================================
+   Buttons
+   ======================================================== */
+.btn {
+  padding: 8px 16px;
+  font-size: 13.5px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #FFFFFF;
+  margin-right: 6px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: inherit;
+  transition: background-color 0.15s ease;
+}
+
+.btn-blue {
+  background-color: #1D4ED8;
+}
+
+.btn-blue:hover {
+  background-color: #1E40AF;
+}
+
+.btn-green {
+  background-color: #15803D;
+}
+
+.btn-green:hover {
+  background-color: #166534;
+}
+
+.btn-red {
+  background-color: #DC2626;
+}
+
+.btn-red:hover {
+  background-color: #B91C1C;
+}
+
+.btn-outline {
+  background-color: #FFFFFF;
+  color: #16325C;
+  border: 1px solid #CBD5E1;
+}
+
+.btn-outline:hover {
+  background-color: #F1F5F9;
+  border-color: #16325C;
+}
+
+/* ========================================================
+   Forms
+   ======================================================== */
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  font-size: 13.5px;
+  color: #1E293B;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #CBD5E1;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+  font-family: inherit;
+  background-color: #FFFFFF;
+  color: #1E293B;
+  transition: border-color 0.15s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #1D4ED8;
+  box-shadow: 0 0 0 2px rgba(29, 78, 216, 0.15);
+}
+
+/* ========================================================
+   Search & Controls
+   ======================================================== */
+.search-container {
+  margin-bottom: 18px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #F8FAFC;
+  padding: 12px;
+  border: 1px solid #E2E8F0;
+  border-radius: 4px;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 220px;
+  padding: 8px 12px;
+  border: 1px solid #CBD5E1;
+  border-radius: 4px;
+  font-size: 13.5px;
+}
+
+.search-select {
+  padding: 8px 12px;
+  border: 1px solid #CBD5E1;
+  border-radius: 4px;
+  font-size: 13.5px;
+  background-color: #FFFFFF;
+}
+
+/* Action button spacing */
+.actions-cell {
+  white-space: nowrap;
+}
+
+/* ========================================================
+   Footer
+   ======================================================== */
+footer {
+  text-align: center;
+  padding: 24px;
+  color: #475569;
+  font-size: 13px;
+  margin-top: 25px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-top: 1px solid #CBD5E1;
+}
+
+footer p {
+  color: #475569;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav.nav-tabs {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .stats-box {
+    gap: 15px;
+  }
+}

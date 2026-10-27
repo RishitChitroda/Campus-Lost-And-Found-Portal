@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A365D"/>
+      <stop offset="100%" stop-color="#0F2942"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield Outer -->
+  <path d="M32 4 L56 12 C56 36 32 58 32 60 C32 58 8 36 8 12 Z" fill="url(#shieldGrad)" stroke="#D97706" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Gold Accent Inner Line -->
+  <path d="M32 8 L52 15 C52 34 32 52 32 54 C32 52 12 34 12 15 Z" fill="none" stroke="#F59E0B" stroke-width="1" opacity="0.6"/>
+  <!-- Open Book Symbol -->
+  <path d="M22 36 C26 34 30 35 32 37 C34 35 38 34 42 36 L42 27 C38 25 34 26 32 28 C30 26 26 25 22 27 Z" fill="#FFFFFF"/>
+  <line x1="32" y1="28" x2="32" y2="37" stroke="#1A365D" stroke-width="1"/>
+  <!-- Graduation Cap -->
+  <polygon points="32,16 44,21 32,26 20,21" fill="#F59E0B"/>
+  <polygon points="32,26 40,22.5 40,25 32,28.5 24,25 24,22.5" fill="#D97706"/>
+  <!-- Magnifying Glass for Finding -->
+  <circle cx="37" cy="39" r="6" fill="none" stroke="#F59E0B" stroke-width="2"/>
+  <circle cx="37" cy="39" r="4.5" fill="#FFFFFF" opacity="0.2"/>
+  <line x1="41.5" y1="43.5" x2="48" y2="50" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

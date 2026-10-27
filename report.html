@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Lost & Found Portal - Report Item</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Bar: College Emblem on Left, Relocated Navigation Tabs on Right -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-wrapper">
+        <img src="images/college-logo.jpg" alt="College Logo" class="brand-logo">
+        <div class="brand-text">
+          <h1>Campus Lost &amp; Found Portal</h1>
+          <span>Student Services &bull; College Campus</span>
+        </div>
+      </a>
+
+      <!-- Relocated Navigation Tabs -->
+      <nav class="nav-tabs">
+        <a href="index.html">Home</a>
+        <a href="items.html">Browse Items</a>
+        <a href="report.html" class="active">Report Item</a>
+        <a href="manage-items.html">Manage Items</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <div class="container" style="max-width: 800px;">
+    <h2>Report an Item</h2>
+    <p>Please select whether you are reporting an item you misplaced or an item you found on campus.</p>
+
+    <!-- Report Type Selection Tabs -->
+    <div class="form-type-tabs">
+      <button type="button" class="form-type-btn active lost" id="tab-btn-lost" onclick="selectReportType('Lost')">
+        I Lost an Item (Report Lost)
+      </button>
+      <button type="button" class="form-type-btn found" id="tab-btn-found" onclick="selectReportType('Found')">
+        I Found an Item (Report Found)
+      </button>
+    </div>
+
+    <!-- Report Item Form -->
+    <form id="report-form">
+      <input type="hidden" id="item-type" value="Lost">
+
+      <div class="form-group">
+        <label for="item-name">Item Name *</label>
+        <input type="text" id="item-name" placeholder="e.g. Dell Laptop Charger, Black Leather Wallet, Casio Calculator" required>
+      </div>
+
+      <div class="form-group">
+        <label for="item-category">Category *</label>
+        <select id="item-category" required>
+          <option value="">-- Select Category --</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Documents/ID Cards">Documents/ID Cards</option>
+          <option value="Bags">Bags</option>
+          <option value="Wallets">Wallets</option>
+          <option value="Keys">Keys</option>
+          <option value="Books/Stationery">Books/Stationery</option>
+          <option value="Clothing">Clothing</option>
+          <option value="Accessories">Accessories</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="item-location" id="label-location">Location where item was Lost *</label>
+        <input type="text" id="item-location" placeholder="e.g. Central Library 2nd Floor, Campus Canteen, Room 302" required>
+      </div>
+
+      <div class="form-group">
+        <label for="item-date">Date *</label>
+        <input type="date" id="item-date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="item-desc">Description / Distinct Features *</label>
+        <textarea id="item-desc" rows="4" placeholder="Mention key identifiers such as color, brand, stickers, serial number, scratches..." required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="contact-name">Your Full Name *</label>
+        <input type="text" id="contact-name" placeholder="e.g. Rahul Sharma" required>
+      </div>
+
+      <div class="form-group">
+        <label for="contact-email">Your College Email Address *</label>
+        <input type="email" id="contact-email" placeholder="e.g. rahul.sharma@college.edu" required>
+      </div>
+
+      <div style="margin-top: 20px;">
+        <button type="submit" class="btn btn-blue" id="submit-report-btn">Submit Lost Report</button>
+        <a href="items.html" class="btn btn-outline" style="margin-left: 8px;">Cancel</a>
+      </div>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Campus Lost &amp; Found Portal &bull; College Web Technology Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

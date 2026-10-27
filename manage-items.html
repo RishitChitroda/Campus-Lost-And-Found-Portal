@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Lost & Found Portal - Manage Items</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Bar: College Emblem on Left, Relocated Navigation Tabs on Right -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-wrapper">
+        <img src="images/college-logo.jpg" alt="College Logo" class="brand-logo">
+        <div class="brand-text">
+          <h1>Campus Lost &amp; Found Portal</h1>
+          <span>Student Services &bull; College Campus</span>
+        </div>
+      </a>
+
+      <!-- Relocated Navigation Tabs -->
+      <nav class="nav-tabs">
+        <a href="index.html">Home</a>
+        <a href="items.html">Browse Items</a>
+        <a href="report.html">Report Item</a>
+        <a href="manage-items.html" class="active">Manage Items</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <div class="container">
+    <h2>Manage Reported Items</h2>
+    <p>Mark reported items as <strong>Returned / Claimed</strong> once the owner retrieves their item, or delete records that are no longer relevant.</p>
+
+    <!-- Manage Items Table (Plain Text, No Icons) -->
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 75px;">ID</th>
+          <th>Item Details</th>
+          <th style="width: 90px;">Type</th>
+          <th>Category</th>
+          <th style="width: 100px;">Status</th>
+          <th style="width: 180px;">Actions</th>
+        </tr>
+      </thead>
+      <tbody id="manage-items-table">
+        <!-- Loaded dynamically with JavaScript -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Campus Lost &amp; Found Portal &bull; College Web Technology Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
