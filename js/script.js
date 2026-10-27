@@ -46,7 +46,7 @@ function escapeHtml(text) {
 
 // Optional background sync with MySQL database if running under XAMPP
 function syncWithDatabase() {
-  fetch("api.php?action=get_items")
+  fetch("backend/api.php?action=get_items")
     .then(function (res) { return res.json(); })
     .then(function (result) {
       if (result && result.success && Array.isArray(result.data) && result.data.length > 0) {
@@ -363,7 +363,7 @@ function loadReportPage() {
     saveItems(items);
 
     // Sync with MySQL if running on server
-    fetch("api.php?action=add_item", {
+    fetch("backend/api.php?action=add_item", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newItem)
@@ -433,7 +433,7 @@ function markItemReturned(itemId) {
     }
   }
 
-  fetch("api.php?action=mark_returned&id=" + itemId).catch(function () {});
+  fetch("backend/api.php?action=mark_returned&id=" + itemId).catch(function () {});
   renderManageItemsTable();
 }
 
@@ -454,7 +454,7 @@ function deleteItem(itemId) {
   }
 
   saveItems(updatedItems);
-  fetch("api.php?action=delete_item&id=" + itemId).catch(function () {});
+  fetch("backend/api.php?action=delete_item&id=" + itemId).catch(function () {});
 
   alert("Item #" + itemId + " (" + deletedName + ") was deleted.");
   renderManageItemsTable();

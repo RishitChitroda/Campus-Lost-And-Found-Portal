@@ -35,7 +35,7 @@ This portal provides a unified, real-time platform where any student or campus m
    - Assigns unique auto-incrementing Item IDs (`#101`, `#102`, etc.).
 4. **Item Management Module (`manage-items.html`)**:
    - Allows users and campus administrators to mark recovered items as *Returned* or delete outdated listings.
-5. **Database & API Layer (`api.php`, `db.php`, `database.sql`)**:
+5. **Database & API Layer (`backend/api.php`, `backend/db.php`, `database/database.sql`)**:
    - Connects the front-end to a relational MySQL database (`lost_found_db`) using PHP Data Objects (PDO) with prepared statements.
 
 ---
@@ -72,7 +72,7 @@ This portal provides a unified, real-time platform where any student or campus m
 
 ## 3. MAIN MODULE LOGIC CODE
 
-### 3.1 Front-End Controller Logic (`script.js` - Search & Dynamic Table Rendering)
+### 3.1 Front-End Controller Logic (`js/script.js` - Search & Dynamic Table Rendering)
 
 ```javascript
 // ==========================================

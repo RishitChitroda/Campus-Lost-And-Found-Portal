@@ -13,7 +13,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #F1F5F9;
   /* Soft overlay over real campus photograph background */
-  background-image: linear-gradient(rgba(244, 246, 249, 0.90), rgba(244, 246, 249, 0.90)), url('images/campus-bg.jpg');
+  background-image: linear-gradient(rgba(244, 246, 249, 0.90), rgba(244, 246, 249, 0.90)), url('../images/campus-bg.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
